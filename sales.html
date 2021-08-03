@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <title>Salmon Cookies</title>
-  </head>
-  <body>
-    <form id="new-store">
-      <fieldset>
-        <legend>Create a store here!</legend>
-        <label for="storeName">New Store:</label>
-        <input name="storeName" type="text">
-        <label for="minCustomers">Min Customers:</label>
-        <input name="minCustomers" type="text">
-        <label for="maxCustomers">Max Customers: </label>
-        <input name="maxCustomers" type="text">
-        <label for="averageCookies">Average Cookies: </label>
-        <input name="averageCookies" type="text">
-        <input type="submit" name="submit" value="Create New Store">
-        </ul>
-      </fieldset>
-    </form>
-    <table>
-      <thead>
-        <tr id="firstRow">
-          <th></th>
-        </tr>
-      </thead>
-      <tbody id="bodyRow">
-      </tbody>
-    </table>
-        <a href="index.html">Customer Facing Website</a>
-    <script src="app.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Sales Data: Pat's Salmon Cookies</title>
+</head>
+
+<body>
+  <h1>Pat's Salmon Cookies: Sales Data</h1>
+  <a href="/">Home!</a>
+
+  <form id="add-location">
+    <fieldset>
+      <legend>Add new store here</legend>
+
+      <label for="locName">Location Name</label>
+      <input name="location" type="text"></input>
+
+      <label for="min">Minimum Customers Per Hour</label>
+      <input name="min" type="number"></input>
+
+      <label for="max">Maximum Customers Per Hour</label>
+      <input name="max" type="number"></input>
+
+      <label for="avg">Average Cookies Each Sale</label>
+      <input name="avg" type="text"></input>
+
+      <button type="submit">Click here to add</button>
+    </fieldset>
+  </form>
+  <table id="sales-table"></table>
+
+
+  <script src="scripts.js"></script>
+</body>
+
 </html>
